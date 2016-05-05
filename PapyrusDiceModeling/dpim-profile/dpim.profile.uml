@@ -312,7 +312,7 @@
       </eAnnotations>
     </contents>
   </eAnnotations>
-  <packagedElement xmi:type="uml:Profile" xmi:id="_2TkvUOw6EeWQ8K9LOae0jg" name="DPIM" metaclassReference="_a5Vq8Ow-EeWQ8K9LOae0jg _YXH7wPXUEeWEBdulHKwO-A _xDnqsPXUEeWEBdulHKwO-A _XrmyMPXXEeWEBdulHKwO-A">
+  <packagedElement xmi:type="uml:Profile" xmi:id="_2TkvUOw6EeWQ8K9LOae0jg" name="DPIM" metaclassReference="_a5Vq8Ow-EeWQ8K9LOae0jg _YXH7wPXUEeWEBdulHKwO-A _xDnqsPXUEeWEBdulHKwO-A _XrmyMPXXEeWEBdulHKwO-A _aakpkBU2EeaVacHf_WlW_w">
     <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_suH0oPXVEeWEBdulHKwO-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
       <contents xmi:type="ecore:EPackage" xmi:id="_mwqHEAWAEeaLsN9z6-kPPw" name="DPIM" nsURI="http://DPIM/schemas/DPIM/_mwpgAAWAEeaLsN9z6-kPPw/32" nsPrefix="DPIM">
         <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mwsjUAWAEeaLsN9z6-kPPw" source="PapyrusVersion">
@@ -2666,6 +2666,9 @@
     </elementImport>
     <elementImport xmi:type="uml:ElementImport" xmi:id="_XrmyMPXXEeWEBdulHKwO-A" alias="Enumeration">
       <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Enumeration"/>
+    </elementImport>
+    <elementImport xmi:type="uml:ElementImport" xmi:id="_aakpkBU2EeaVacHf_WlW_w" alias="Connector">
+      <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Connector"/>
     </elementImport>
     <packagedElement xmi:type="uml:Stereotype" xmi:id="_b-8BEOw-EeWQ8K9LOae0jg" name="DIAElement">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_H_ezkOw_EeWQ8K9LOae0jg" name="base_Component" association="_H_bJMOw_EeWQ8K9LOae0jg">

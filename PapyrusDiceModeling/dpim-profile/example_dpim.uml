@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:DPIM_Profile="http:///schemas/DPIM_Profile/_ItqbkBU5EeaVacHf_WlW_w/6" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/DPIM_Profile/_ItqbkBU5EeaVacHf_WlW_w/6 DPIM_Profile.profile.uml#_ItqbkRU5EeaVacHf_WlW_w">
+  <uml:Model xmi:id="_xvHuIBU2EeaVacHf_WlW_w" name="RootElement">
+    <packagedElement xmi:type="uml:Component" xmi:id="_UUkpwBU4EeaVacHf_WlW_w" name="MyDIA">
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_OvFLcBU5EeaVacHf_WlW_w" name="Connector1">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_OvFygBU5EeaVacHf_WlW_w" role="_Eu6uEBU5EeaVacHf_WlW_w"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_OvFygRU5EeaVacHf_WlW_w" role="_y5PF8BU4EeaVacHf_WlW_w"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_PUEH0BU5EeaVacHf_WlW_w" name="Connector2">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_PUEu4BU5EeaVacHf_WlW_w" role="_xqZUQBU4EeaVacHf_WlW_w"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_PUEu4RU5EeaVacHf_WlW_w" role="_y5PF8BU4EeaVacHf_WlW_w"/>
+      </ownedConnector>
+      <packagedElement xmi:type="uml:Component" xmi:id="_XjCJ0BU4EeaVacHf_WlW_w" name="WordCount" visibility="public">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_xqZUQBU4EeaVacHf_WlW_w" name="Port1" aggregation="composite"/>
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_Eu6uEBU5EeaVacHf_WlW_w" name="Port2" aggregation="composite"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Component" xmi:id="_q300QBU4EeaVacHf_WlW_w" name="Storage">
+        <ownedAttribute xmi:type="uml:Port" xmi:id="_y5PF8BU4EeaVacHf_WlW_w" name="Port1" aggregation="composite"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_xwdx8BU2EeaVacHf_WlW_w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xwg1QBU2EeaVacHf_WlW_w" source="PapyrusVersion">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xwg1QRU2EeaVacHf_WlW_w" key="Version" value="0.0.31"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xwg1QhU2EeaVacHf_WlW_w" key="Comment" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xwg1QxU2EeaVacHf_WlW_w" key="Copyright" value=""/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xwg1RBU2EeaVacHf_WlW_w" key="Date" value="2016-04-18"/>
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xwg1RRU2EeaVacHf_WlW_w" key="Author" value=""/>
+      </eAnnotations>
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xwgOMBU2EeaVacHf_WlW_w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="/dpim-profile/dpim.profile.uml#_mwnDwQWAEeaLsN9z6-kPPw"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="/dpim-profile/dpim.profile.uml#_2kpDsOuWEeWoxpaQL3f2Xg"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_cJWDGxU3EeaVacHf_WlW_w">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_cJWqIBU3EeaVacHf_WlW_w" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="DPIM_Profile.profile.uml#_ItqbkRU5EeaVacHf_WlW_w"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="DPIM_Profile.profile.uml#_cJTm0BU3EeaVacHf_WlW_w"/>
+    </profileApplication>
+  </uml:Model>
+  <DPIM_Profile:ComputeNode xmi:id="_lV1LUBU4EeaVacHf_WlW_w" base_Component="_XjCJ0BU4EeaVacHf_WlW_w" processingType="defaultValue"/>
+  <DPIM_Profile:StorageNode xmi:id="_wtSy0BU4EeaVacHf_WlW_w" base_Component="_q300QBU4EeaVacHf_WlW_w" storageType="defaultValue"/>
+  <DPIM_Profile:data_access xmi:id="__twhUBU4EeaVacHf_WlW_w" base_Port="_y5PF8BU4EeaVacHf_WlW_w"/>
+  <DPIM_Profile:write_to xmi:id="_DoGP8BU5EeaVacHf_WlW_w" base_Port="_xqZUQBU4EeaVacHf_WlW_w"/>
+  <DPIM_Profile:read_from xmi:id="_ItuF8BU5EeaVacHf_WlW_w" base_Port="_Eu6uEBU5EeaVacHf_WlW_w"/>
+</xmi:XMI>
