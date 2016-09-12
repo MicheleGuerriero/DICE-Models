@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="dtsm_core" nsURI="http://io.github.dice-project/dtsm/core/1.0"
+    nsPrefix="dtsm_core">
+  <eClassifiers xsi:type="ecore:EClass" name="DIA">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="elements" upperBound="-1"
+        eType="#//DIAElement" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelId" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString" iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DIAElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DataSource" eSuperTypes="#//DIAElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="StorageSystem" eSuperTypes="#//DIAElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Data" eSuperTypes="#//DIAElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="fields" upperBound="-1"
+        eType="#//SchemaField" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="providedBy" upperBound="-1"
+        eType="#//DataSource"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SourceNode" eSuperTypes="#//DIAElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="SchemaField" eSuperTypes="#//DIAElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Database" eSuperTypes="#//DIAElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MessaggingSystem" eSuperTypes="#//DIAElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Property" eSuperTypes="#//DIAElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Dataflow" eSuperTypes="#//DIAElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DirectAcyclicGraph" eSuperTypes="#//DIAElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="DAGNode" eSuperTypes="#//DIAElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MapReduceJob" eSuperTypes="#//DIAElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="MapReducePhase" eSuperTypes="#//DIAElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Map" eSuperTypes="#//DIAElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Reduce" eSuperTypes="#//DIAElement"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="DataflowOperation"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="MapType"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="ReduceType"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="VMSize"/>
+  <eClassifiers xsi:type="ecore:EEnum" name="ProviderType"/>
+  <eClassifiers xsi:type="ecore:EClass" name="PerformanceProfile"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ComputeNode" eSuperTypes="#//DIAElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="processInputData" upperBound="-1"
+        eType="#//Data"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="produceOutputData" upperBound="-1"
+        eType="#//Data"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="storeOutputIn" eType="#//StorageSystem"/>
+  </eClassifiers>
+</ecore:EPackage>
